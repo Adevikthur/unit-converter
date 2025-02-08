@@ -118,6 +118,7 @@ body .main .top {
 body .main .top .holder {
   display: flex;
   flex-direction: column;
+  text-align: center;
   color: white;
   gap: 32px;
   align-items: center;
@@ -184,4 +185,93 @@ body .main .bottom .grid-list__text-holder h5 {
 body .main .bottom .grid-list__text-holder p {
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 24px !important;
+    overflow-y: auto;
+  }
+  .main {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .main .top {
+    padding: 24px !important;
+    border-radius: 8px 8px 0 0;
+  }
+  .main .top .holder {
+    gap: 24px !important;
+  }
+  .main .top .holder__heading h3 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    text-align: center;
+  }
+  .main .top .holder__convert input {
+    width: 100% !important;
+    font-size: 24px !important;
+    max-width: 200px;
+  }
+  .main .top .holder .btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 16px;
+  }
+  .main .bottom {
+    padding: 24px !important;
+    border-radius: 0 0 8px 8px;
+  }
+  .main .bottom .grid-list {
+    padding: 16px !important;
+  }
+  .main .bottom .grid-list__text-holder h5 {
+    font-size: 18px !important;
+  }
+  .main .bottom .grid-list__text-holder p {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+}
+@media (max-width: 375px) {
+  .main .top .holder__convert input {
+    font-size: 20px !important;
+    max-width: 180px;
+  }
+  .main .bottom .grid-list__text-holder h5 {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding: 32px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+}
+
+.main {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+.main .top {
+  border-radius: 8px 8px 0 0;
+}
+.main .top .holder__heading h3 {
+  transition: font-size 0.3s ease;
+}
+.main .top .holder__convert input {
+  transition: font-size 0.3s ease;
+}
+.main .bottom {
+  border-radius: 0 0 8px 8px;
+}
+.main .bottom .grid-list {
+  transition: padding 0.3s ease;
 }/*# sourceMappingURL=main.css.map */

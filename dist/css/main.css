@@ -99,6 +99,10 @@ body {
   align-items: center;
   justify-items: center;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   margin: 0;
 }
 body .main {

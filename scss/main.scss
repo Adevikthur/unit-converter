@@ -112,6 +112,11 @@ body {
     align-items: center;
     justify-items: center;
     overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
     // overflow-y: hidden;
     margin: 0;
 
